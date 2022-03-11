@@ -1,0 +1,15 @@
+{
+    "default": {
+        "id": "Theme_01",
+        "name": "Default",
+        "colors": {
+            "body": "#040d16",
+            "text": "#f0f8ff",
+            "button": {
+                "text": "#f0f8ff",
+                "background": "transparent"
+            }
+        },
+        "font": "Lexend"
+    }
+}
