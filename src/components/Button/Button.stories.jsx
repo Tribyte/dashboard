@@ -1,14 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import { storiesOf } from "@storybook/react";
+import { Button } from "./Button";
 
-export default {
-    component: Button,
-    title: 'Components/Button',
-};
-
-const Template = args => <Button {...args} />;
-
-export const Default = Template.bind({})
-Default.args = {
-    value: "Button",
-};
+// storiesOf("Component", module).add("Button", () => <Button />)

@@ -4,7 +4,6 @@ import _ from "lodash";
 
 export const Theme = () => {
     const themes = getLocal("all-themes").themes;
-    console.log(themes);
     const [theme, setStateTheme] = useState(themes.default);
     const [themeLoaded, setStateThemeLoaded] = useState(false);
 
@@ -19,8 +18,9 @@ export const Theme = () => {
     }
 
     useEffect(() => {
-        //const localTheme = getLocal('theme');
-        //localTheme ? setStateTheme(localTheme) : setStateTheme(themes.default);
+        const localTheme = getLocal('theme');
+        const themes = getLocal("all-themes").themes;
+        localTheme ? setStateTheme(localTheme) : setStateTheme(themes.default);
         setStateThemeLoaded(true);
     }, []);
 

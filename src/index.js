@@ -12,6 +12,6 @@ const Index = () => {
 }
 
 ReactDOM.render(
-  <Index />,
-  document.getElementById('root')
+    <Index />,
+    document.getElementById('root')
 );

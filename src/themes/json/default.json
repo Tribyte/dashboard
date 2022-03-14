@@ -1,7 +1,12 @@
 {
-    "default": {
-        "id": "Theme_01",
-        "name": "Default",
+    "theme": {
+        "id": "theme_01",
+        "name": "default",
+
+        "sidebar": {
+            "background": "#242d36"
+        },
+
         "colors": {
             "body": "#040d16",
             "text": "#f0f8ff",
