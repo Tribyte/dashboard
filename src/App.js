@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "../themes/GlobalStyles";
-import { Theme } from "../themes/Theme";
-import { getLocal } from "../utils/storage";
+import { GlobalStyles } from "./themes/GlobalStyles";
+import { Theme } from "./themes/Theme";
+import { getLocal } from "./utils/storage";
 
 function App() {
     const themes = getLocal("all-themes").themes;

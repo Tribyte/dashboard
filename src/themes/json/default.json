@@ -3,8 +3,29 @@
         "id": "theme_01",
         "name": "default",
 
-        "sidebar": {
-            "background": "#242d36"
+        "font": "Lexend",
+
+        "navigation": {
+            "components": {
+                "button": {
+                    "svg": {
+                        "fill": "#fff",
+                        "stroke": "#fff",
+                        "padding": "15px",
+                        "width": "40px" 
+                    }
+                }
+            },
+            
+            "sidebar": {
+                "background": "#242d36",
+
+                "button": {
+                    "svg": {
+                        "color": "#fff"
+                    }
+                }
+            }
         },
 
         "colors": {
@@ -14,7 +35,6 @@
                 "text": "#f0f8ff",
                 "background": "transparent"
             }
-        },
-        "font": "Lexend"
+        }
     }
 }

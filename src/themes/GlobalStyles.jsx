@@ -10,4 +10,8 @@ export const GlobalStyles = createGlobalStyle`
         color: ${ ({ theme }) => theme.colors.text };
         background: ${ ({ theme }) => theme.colors.body };
     }
+
+    #root {
+        min-height: 100vh;
+    }
 `;

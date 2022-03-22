@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/App';
+import App from './App';
 
 import { AllThemes } from './themes/AllThemes';
 import { setLocal } from './utils/storage';
