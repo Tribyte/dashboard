@@ -1,0 +1,45 @@
+{
+    "theme": {
+        "id": "theme_02",
+        "name": "test",
+
+        "font_family": "Lexend",
+        "font_size": "1em",
+
+        "color": "#f0f8ff",
+        "background": "#666",
+
+        "border_radius": "10px",
+        "border": "2px solid #f0f8ff",
+
+        "navigation": {
+            "color": "#f0f8ff",
+            "background": "#1c2c3c",
+
+            "components": {
+                "button": {
+                    "background": "transparent",
+
+                    "border": "0",
+
+                    "svg": {
+                        "padding": "15px",
+                        "width": "40px" 
+                    }
+                }
+            },
+
+            "sidebar": {
+                "width": "80px"
+            },
+
+            "topbar": {
+                "height": "80px"
+            }
+        },
+
+        "form": {
+            "input": {}
+        }
+    }
+}

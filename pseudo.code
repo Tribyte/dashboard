@@ -1,0 +1,120 @@
+Query: should landing be included with themes, as in a user can change how landing looks?
+
+Key:
+    ~~ not a style
+    [] means optional, will use the first default that is defined above it
+    <> means this is optional, though someone would have to be more insane than me to use this
+
+theme:
+    ~~ id
+    ~~ name
+
+    -> font-family
+    -> font-size
+
+    -> color (text color)
+    -> background (currently just color, will allow animated backgrounds later)
+
+    -> border-radius
+    -> border (thickness, style (solid, dashed), color)
+
+    -> [] padding      (defaults to 0)
+    -> [] margin       (defaults to 0)
+
+    -> <> body-padding (defaults to 0)
+    -> <> body-margin  (defaults to 0)
+
+    navigation:
+        -> [] font-family
+        -> [] font-size
+
+        -> color
+        -> background
+
+        -> [] padding
+        -> <> margin
+
+        components:
+            button:
+                -> [] font-family
+                -> [] font-size
+
+                -> [] color
+                -> [] background
+
+                -> [] border-radius
+                -> [] border
+
+                -> [] padding
+                -> [] margin
+
+                -> [] width
+                -> [] height
+
+                svg:
+                    -> [] fill   (defaults to color)
+                    -> [] stroke (defaults to color)
+
+                    -> [] padding
+                    -> [] margin
+
+                    -> width
+                    -> [] height
+
+        sidebar:
+            -> [] font-family
+            -> [] font-size
+            
+            -> [] padding
+            -> [] margin 
+
+            -> width
+            -> <> height
+
+        topbar:
+            -> [] font-family
+            -> [] font-size
+            
+            -> [] padding
+            -> [] margin 
+
+            -> <> width
+            -> height
+
+    form:
+        -> [] font-family
+        -> [] font-size
+
+        -> [] color
+        -> [] background
+
+        -> [] border-radius
+        -> [] border
+
+        -> [] padding
+        -> [] margin
+
+        -> width
+        -> height
+
+        input:
+            -> [] font-family
+            -> [] font-size
+
+            -> [] color
+            -> [] background
+
+            -> [] border-radius
+            -> [] border
+
+            -> [] padding
+            -> [] margin
+
+            -> width
+            -> [] height
+
+            focus:
+                -> [] outline (default is "none")
+
+    component:
+        (idk what to do here)

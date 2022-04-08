@@ -1,0 +1,122 @@
+{
+    "theme": {
+        "id": null,
+        "name": null,
+
+        "font_family": null,
+        "font_size": null,
+
+        "color": null,
+        "background": null,
+
+        "border": null,
+        "border_radius": null,
+
+        "padding": null,
+        "margin": null,
+
+        "body_padding": 0,
+        "body_margin": 0,
+
+        "navigation": {
+            "font_family": null,
+            "font_size": null,
+
+            "color": null,
+            "background": null,
+
+            "padding": null,
+            "margin": null,
+
+            "components": {
+                "button": {
+                    "font_family": null,
+                    "font_size": null,
+
+                    "color": null,
+                    "background": null,
+
+                    "border_radius": null,
+                    "border": null,
+
+                    "padding": null,
+                    "margin": null,
+
+                    "width": null,
+                    "height": null,
+
+                    "svg": {
+                        "fill": null,
+                        "stroke": null,
+
+                        "padding": null,
+                        "margin": null,
+
+                        "width": null,
+                        "height": null 
+                    }
+                }
+            },
+
+            "sidebar": {
+                "font_family": null,
+                "font_size": null,
+                
+                "padding": null,
+                "margin": null,
+
+                "width": null,
+                "height": null
+            },
+
+            "topbar": {
+                "font_family": null,
+                "font_size": null,
+
+                "padding": null,
+                "margin": null,
+
+                "width": null,
+                "height": null
+            }
+        },
+
+        "form": {
+            "font_family": null,
+            "font_size": null,
+
+            "color": null,
+            "background": null,
+
+            "border_radius": null,
+            "border": null,
+
+            "padding": null,
+            "margin": null,
+
+            "width": null,
+            "height": null,
+
+            "input": {
+                "font_family": null,
+                "font_size": null,
+
+                "color": null,
+                "background": null,
+
+                "border_radius": null,
+                "border": null,
+
+                "padding": null,
+                "margin": null,
+
+                "width": null,
+                "height": null,
+
+                "focus": {
+                    "outline": "none"
+                }
+            }
+        }
+    }
+}
