@@ -1,13 +1,13 @@
 import React from "react";
-import { Button as ButtonComponent } from "./Button";
+import { Button as Component } from "./Button";
 import { ReactComponent as Logo } from "../../../icons/logo-ico.svg";
 
 export default {
     title: "Navigation/Components",
-    component: ButtonComponent,
+    component: Component,
 };
 
-const Template = (args) => <ButtonComponent {...args} />;
+const Template = (args) => <Component {...args} />;
 
 export const Button = Template.bind({});
 Button.args = {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Topbar as TopbarComponent } from "./Topbar";
+import { Topbar as Component } from "./Topbar";
 
 import { ReactComponent as Logo } from "../../icons/logo-ico.svg";
 import { ReactComponent as Home } from "../../icons/home-ico.svg";
@@ -9,10 +9,10 @@ import { ReactComponent as Exit } from "../../icons/exit-ico.svg";
 
 export default {
     title: "Navigation",
-    component: TopbarComponent,
+    component: Component,
 };
 
-const Template = (args) => <TopbarComponent {...args} />;
+const Template = (args) => <Component {...args} />;
 
 const temp = () => console.log("test");
 

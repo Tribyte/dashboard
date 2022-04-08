@@ -11,7 +11,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    background: ${ props => props.theme.navigation.sidebar.background};
+    background: ${ props => props.theme.navigation.background};
 `;
 
 const Top = styled.div`
@@ -38,15 +38,15 @@ const Bottom = styled.div`
 export const Sidebar = (props) => (
     <Container>
         <Top>
-            { props.buttons.map(button => button.position == 0 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
+            { props.buttons.map(button => button.position === 0 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
         </Top>
 
         <Center>
-            { props.buttons.map(button => button.position == 1 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
+            { props.buttons.map(button => button.position === 1 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
         </Center>
 
         <Bottom>
-            { props.buttons.map(button => button.position == 2 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
+            { props.buttons.map(button => button.position === 2 && <Button key={button.id} value={button.value} svg={button.svg} click={button.click} />) }
         </Bottom> 
     </Container>
 );

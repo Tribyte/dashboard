@@ -2,18 +2,15 @@ import { addDecorator } from "@storybook/react";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../src/themes/GlobalStyles";
-import * as ThemeDefault from "../src/themes/json/default.json"
-import * as Test from "../src/themes/json/test.json"
+import { ToastContainer } from 'react-toastify';
+import { AllThemes } from '../src/themes/Theme';
 
-addDecorator(style => <><GlobalStyles />{style()}</>);
+addDecorator(style => <><GlobalStyles />{style()}<ToastContainer /></>);
 
-const defaultTheme = ThemeDefault.default.theme;
-defaultTheme["name"] = "default";
-
-const testTheme = Test.default.theme;
-testTheme["name"] = "test";
-
-const themes = [defaultTheme, testTheme];
+const allThemes = AllThemes().themes;
+let themes = [];
+for(let t in allThemes){ themes.push(allThemes[t]); }
+console.log(themes);
 addDecorator(withThemesProvider(themes), ThemeProvider);
 
 export const parameters = {

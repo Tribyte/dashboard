@@ -1,6 +1,22 @@
 import { useEffect, useState } from "react";
-import { setLocal, getLocal } from "../utils/storage";
+import { setLocal, getLocal } from "../utils/Storage";
+import { ThemeTemplate } from "./Template";
+
+import * as ThemeDefault from "./allThemes/default.json";
+import * as Test from "./allThemes/test.json";
+
 import _ from "lodash";
+
+export const AllThemes = () => {
+    const allThemes = [
+        Test,
+        ThemeDefault,
+    ];
+
+    const themes = {"themes": {}};
+    allThemes.forEach(theme => { themes.themes[theme.default.theme.name] = ThemeTemplate(theme.default).theme; })
+    return themes;
+}
 
 export const Theme = () => {
     const themes = getLocal("all-themes").themes;
@@ -27,3 +43,6 @@ export const Theme = () => {
     return { theme, themeLoaded, setTheme, getFonts };
 };
 
+export function ThemeStyle(style, value){
+    return !value? "" : style + ": " + value;
+}

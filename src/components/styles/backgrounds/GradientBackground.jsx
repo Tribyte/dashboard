@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const GradientInit = (compID) => {
     let back = document.getElementById(compID);
-    console.log(compID);
     var colors = [
         [62, 35, 255],
         [60, 255, 60],
@@ -60,9 +59,7 @@ const Background = styled.div`
 `;
 
 export const GradientBackground = (props) => {
-    useEffect(() => {
-        GradientInit("background");
-    }, []);
+    useEffect(() => { GradientInit("background"); }, []);
 
     return <Background id="background">{props.value}</Background>;
 }

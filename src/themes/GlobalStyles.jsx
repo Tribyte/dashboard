@@ -2,13 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     body {
-        margin: 0;
+        margin: ${ ({ theme }) => theme.body_margin };
         padding: 0 !important;
 
-        font-family: ${ ({ theme}) => theme.font };
+        font-family: ${ ({ theme }) => theme.font_family };
 
-        color: ${ ({ theme }) => theme.colors.text };
-        background: ${ ({ theme }) => theme.colors.body };
+        color: ${ ({ theme }) => theme.color };
+        background: ${ ({ theme }) => theme.background };
     }
 
     #root {
