@@ -1,5 +1,4 @@
 import BaseTemplate from "./template/template.json";
-// debugger;
 
 const Defaults = {
     "padding": 0,
@@ -43,28 +42,3 @@ export const ThemeTemplate = (theme) => {
     FormatTemplate(tempTheme, theme, Defaults);
     return tempTheme;
 }
-
-/*
-function FormatTemplate(template, theme, defaults, defaultTemplate = null){
-    let temp = defaults;
-    for(let obj in template){
-        //console.log("here: " + obj + " type: " + typeof template[obj] + " val: " + template[obj]);
-        if(!theme.hasOwnProperty(obj)){
-            theme[obj] = template[obj];
-
-            if(template[obj] === null){
-                if(!temp.hasOwnProperty(obj) && (!defaultTemplate || !defaultTemplate.hasOwnProperty(obj))){ throw "Missing Theme value '" + obj + "'"; }
-                theme[obj] = (!temp.hasOwnProperty(obj))? defaultTemplate[obj] : temp[obj];
-                continue;
-            }
-        }
-        
-        if(typeof template[obj] === "object" && template[obj] !== null){
-            FormatTemplate(template[obj], theme[obj], temp, (!defaultTemplate)? defaultTemplate : defaultTemplate[obj]);
-            continue;
-        }
-
-        temp[obj] = theme[obj];
-    }
-}
-*/
