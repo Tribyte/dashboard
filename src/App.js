@@ -4,6 +4,7 @@ import { GlobalStyles } from "./themes/GlobalStyles";
 import { Theme } from "./themes/Theme";
 import { getLocal } from "./utils/Storage";
 import { Landing } from "./pages/Landing";
+import { Dashboard } from "./pages/Dashboard";
 
 function App() {
     const themes = getLocal("all-themes").themes;
@@ -19,7 +20,8 @@ function App() {
             {
                 themeLoaded && <ThemeProvider theme={ selectedTheme }>
                     <GlobalStyles />
-                    <Landing />
+                    {/* <Landing /> */}
+                    <Dashboard navigation="sidebar" />
                 </ThemeProvider>
             }
         </>

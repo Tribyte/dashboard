@@ -2,7 +2,7 @@ import React from "react";
 import { Login as Component } from "./Login";
 
 export default {
-    title: "Landing",
+    title: "Pages/Landing",
     component: Component,
 };
 

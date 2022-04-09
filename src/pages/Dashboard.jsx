@@ -21,15 +21,11 @@ const buttons = [
     { position: 0, id: 2, value: <File />, svg: true, click: temp },
     { position: 2, id: 3, value: <Gear />, svg: true, click: temp },
     { position: 2, id: 4, value: <Exit />, svg: true, click: temp }
-]
+];
 
-export class Dashboard extends React.Component {
-    render(){
-        return(
-            <Container>
-                {this.props.navigation == "sidebar" && <Sidebar buttons={buttons} />}
-                {this.props.navigation == "topbar"  && <Topbar  buttons={buttons} />}
-            </Container>
-        );
-    }
-}
+export const Dashboard = (props) => (
+    <Container>
+        {props.navigation === "sidebar" && <Sidebar buttons={buttons} />}
+        {props.navigation === "topbar"  && <Topbar  buttons={buttons} />}
+    </Container>
+)

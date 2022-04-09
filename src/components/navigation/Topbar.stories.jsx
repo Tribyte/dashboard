@@ -8,7 +8,7 @@ import { ReactComponent as Gear } from "../../icons/gear-ico.svg";
 import { ReactComponent as Exit } from "../../icons/exit-ico.svg";
 
 export default {
-    title: "Navigation",
+    title: "Components/Navigation",
     component: Component,
 };
 

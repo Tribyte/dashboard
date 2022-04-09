@@ -2,7 +2,7 @@ import React from "react";
 import { Index as Component } from "./Index";
 
 export default {
-    title: "Landing",
+    title: "Pages/Landing",
     component: Component,
 };
 

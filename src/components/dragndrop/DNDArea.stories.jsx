@@ -2,7 +2,7 @@ import React from "react";
 import { DNDArea as Component } from "./DNDArea";
 
 export default {
-    title: "Drag and Drop",
+    title: "Components/Drag and Drop",
     component: Component,
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import { DragContainer as Component } from "./DragContainer";
 
 export default {
-    title: "Drag and Drop",
+    title: "Components/Drag and Drop",
     component: Component,
 };
 

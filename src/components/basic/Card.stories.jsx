@@ -2,7 +2,7 @@ import React from "react";
 import { Card as Component } from "./Card";
 
 export default {
-    title: "Basic",
+    title: "Components/Basic",
     component: Component,
 };
 

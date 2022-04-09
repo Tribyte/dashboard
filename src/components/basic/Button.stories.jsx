@@ -3,7 +3,7 @@ import { Button as Component } from "./Button";
 import { ReactComponent as Logo } from "../../icons/logo-ico.svg";
 
 export default {
-    title: "Basic",
+    title: "Components/Basic",
     component: Component,
 };
 
