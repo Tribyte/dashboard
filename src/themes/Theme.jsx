@@ -9,8 +9,8 @@ import _ from "lodash";
 
 export const AllThemes = () => {
     const allThemes = [
-        Test,
         ThemeDefault,
+        Test
     ];
 
     const themes = {"themes": {}};

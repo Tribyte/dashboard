@@ -1,6 +1,5 @@
-import * as BaseTemplate from "./template/template.json";
+import BaseTemplate from "./template/template.json";
 // debugger;
-console.log(BaseTemplate.default);
 
 const Defaults = {
     "padding": 0,
@@ -40,11 +39,8 @@ function FormatTemplate(template, theme, defaults, defaultTemplate = null){
 }
 
 export const ThemeTemplate = (theme) => {
-    console.log("base", BaseTemplate.default);
-    let tempTheme = BaseTemplate.default;
-    console.log(tempTheme);
+    let tempTheme = JSON.parse(JSON.stringify(BaseTemplate));
     FormatTemplate(tempTheme, theme, Defaults);
-    console.log(tempTheme);
     return tempTheme;
 }
 

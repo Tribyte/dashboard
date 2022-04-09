@@ -27,8 +27,9 @@ const Centered = styled.div`
     min-height: 100vh;
 `;
 
+const Background = <GradientBackground value={ <Bubbles width="1000"/> } />;
+
 export const Landing = () => {
-    const background = useState(<GradientBackground value={ <Bubbles width="1000"/> } />);
 
     const HomeLink     = () => { setContent("index");    };
     const LoginLink    = () => { setContent("login");    };
@@ -53,7 +54,7 @@ export const Landing = () => {
 
     return (
         <>
-            {background}
+            {Background}
             <Topbar buttons={buttons} />
             <Centered>
                 {component}
