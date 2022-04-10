@@ -10,7 +10,6 @@ addDecorator(style => <><GlobalStyles />{style()}<ToastContainer /></>);
 const allThemes = AllThemes().themes;
 let themes = [];
 for(let t in allThemes){ themes.push(allThemes[t]); }
-console.log(themes);
 addDecorator(withThemesProvider(themes), ThemeProvider);
 
 export const parameters = {
