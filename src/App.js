@@ -4,7 +4,7 @@ import { GlobalStyles } from "./themes/GlobalStyles";
 import { Theme } from "./themes/Theme";
 import { getLocal } from "./utils/Storage";
 import { Landing } from "./pages/Landing";
-import { Dashboard } from "./pages/Dashboard";
+import { Dashboard } from "./pages/dashboard/Dashboard";
 
 function App() {
     const themes = getLocal("all-themes").themes;

@@ -19,6 +19,7 @@
             "components": {
                 "button": {
                     "border": "0",
+                    "height": "2em",
 
                     "svg": {
                         "fill": "#f0f8ff",
@@ -35,6 +36,16 @@
 
             "topbar": {
                 "height": "80px"
+            },
+
+            "toptab": {
+                "height": "80px",
+
+                "components": {
+                    "button": {
+                        "padding": "5px 20px"
+                    }
+                }
             }
         }
     }

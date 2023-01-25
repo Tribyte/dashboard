@@ -1,6 +1,8 @@
+
 import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components';
 import { ThemeStyle } from "../../themes/Theme";
+import { Toptab } from "../../components/navigation/Toptab";
 
 const Container = styled.div`
     position: absolute;
@@ -27,8 +29,24 @@ const Header = styled.h1`
     margin: 0;
 `;
 
+export const Temp = styled.div`
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+`;
+
+export const Tabs = [
+    { position: 0, id: 0, value: "Theme Browser", tabBody: <Temp />},
+    { position: 0, id: 0, value: "Theme Editor", tabBody: <Temp />},
+];
+
 export const ThemeContainer = (props) => (
     <Container>
-       <Header>Themes</Header> 
+        <Header>Themes</Header> 
+        <Toptab buttons={Tabs} />
     </Container>
 );

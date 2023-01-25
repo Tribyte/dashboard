@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
-
+import { createRoot } from 'react-dom/client';
 import { AllThemes } from './themes/Theme';
 import { setLocal } from './utils/Storage';
 
@@ -10,8 +9,8 @@ const Index = () => {
     setLocal('all-themes', allThemes);
     return <App />;
 }
-
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
     <Index />,
-    document.getElementById('root')
 );

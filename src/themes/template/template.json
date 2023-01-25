@@ -61,7 +61,7 @@
             "sidebar": {
                 "font_family": null,
                 "font_size": null,
-                
+
                 "padding": null,
                 "margin": null,
 
@@ -78,6 +78,50 @@
 
                 "width": null,
                 "height": null
+            },
+
+            "toptab": {
+                "font_family": null,
+                "font_size": null,
+
+                "color": null,
+                "background": null,
+
+                "border": null,
+                "border_radius": null,
+
+                "padding": null,
+                "margin": null,
+
+                "components": {
+                    "button": {
+                        "font_family": null,
+                        "font_size": null,
+
+                        "color": null,
+                        "background": null,
+
+                        "border_radius": null,
+                        "border": null,
+
+                        "padding": null,
+                        "margin": null,
+
+                        "width": null,
+                        "height": null,
+
+                        "svg": {
+                            "fill": null,
+                            "stroke": null,
+
+                            "padding": null,
+                            "margin": null,
+
+                            "width": null,
+                            "height": null 
+                        }
+                    }
+                }
             }
         },
 
@@ -117,6 +161,23 @@
                     "outline": "none"
                 }
             }
+        },
+
+        "card": {
+            "font_family": null,
+            "font_size": null,
+
+            "color": null,
+            "background": null,
+
+            "border_radius": null,
+            "border": null,
+
+            "padding": null,
+            "margin": null,
+
+            "width": null,
+            "height": null
         }
     }
 }
